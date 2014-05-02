@@ -11,6 +11,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+void InsertionSort(int *a, int n);
+
 int main(void) {
 
 	int a[100], i;
@@ -26,7 +28,7 @@ int main(void) {
 		scanf("%d",&a[i]);
 	}
 
-	InsertionSort(&a, n);
+	InsertionSort(a, n);
 
 	for(i = 0; i < n; i ++){
 		printf("%d\t",a[i]);
